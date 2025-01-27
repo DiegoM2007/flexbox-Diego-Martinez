@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: #fff8ee; /* Fondo suave naranja pastel */
+    color: #4d3319; /* Marrón oscuro para contraste */
+}
+
+header {
+    background: #ff7f50; /* Naranja coral */
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffe4b5; /* Naranja pastel claro */
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section {
+    padding: 2rem 1rem;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    background: #ffe4b5; /* Naranja pastel claro */
+    border: 1px solid #ffd2a6; /* Borde suave */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.section h2 {
+    color: #ff7f50; /* Naranja coral */
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.trusted-by {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.trusted-by img {
+    max-height: 50px;
+}
+
+.testimonial-section {
+    padding: 1rem;
+    text-align: center;
+    background: #fff2e5; /* Fondo naranja pastel */
+    border-radius: 8px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #ffe4b5; /* Fondo pastel */
+    padding: 1rem;
+    border: 1px solid #ffd2a6; /* Borde suave */
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+footer {
+    background: #ff7f50; /* Naranja coral */
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffe4b5; /* Naranja pastel */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        flex: 1 1 100%;
+    }
+}

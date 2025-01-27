@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Ciberseguridad</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+            background-color: #fff8ee; /* Fondo suave naranja pastel */
+            color: #4d3319; /* Marrón oscuro para contraste */
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #ff7f50; /* Naranja coral */
+            color: #fff; /* Texto blanco */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffe4b5; /* Naranja pastel claro */
+        }
+
+        /* Contenido principal */
+        main {
+            flex: 1;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section {
+            padding: 2rem 1rem;
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            background: #ffe4b5; /* Naranja pastel claro */
+            border: 1px solid #ffd2a6; /* Borde suave */
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+
+        .section h2 {
+            color: #ff7f50; /* Naranja coral */
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+
+        /* Confiado por */
+        .trusted-by {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .trusted-by img {
+            max-height: 50px;
+        }
+
+        /* Testimonios */
+        .testimonial-section {
+            padding: 1rem;
+            text-align: center;
+            background: #fff2e5; /* Fondo naranja pastel */
+            border-radius: 8px;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            background: #ffe4b5; /* Fondo pastel */
+            padding: 1rem;
+            border: 1px solid #ffd2a6; /* Borde suave */
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 2rem);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #ff7f50; /* Naranja coral */
+            color: #fff; /* Texto blanco */
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #ffe4b5; /* Naranja pastel */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .testimonial {
+                flex: 1 1 calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .testimonial {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Informe de Ciberseguridad</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Red Team</a>
+            <a href="#">Blue Team</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Red Team</h2>
+            <p>El Red Team se enfoca en simular ataques reales para identificar vulnerabilidades y debilidades en los sistemas de seguridad de una organización. Utilizan técnicas como:</p>
+            <ul>
+                <li>Pruebas de penetración</li>
+                <li>Ingeniería social</li>
+                <li>Explotación de vulnerabilidades</li>
+                <li>Simulaciones de ataques avanzados</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Blue Team</h2>
+            <p>El Blue Team es responsable de defender los sistemas y redes de una organización contra ataques cibernéticos. Sus funciones incluyen:</p>
+            <ul>
+                <li>Monitoreo continuo de seguridad</li>
+                <li>Detección y respuesta a incidentes</li>
+                <li>Implementación de controles de seguridad</li>
+                <li>Análisis forense</li>
+            </ul>
+        </div>
+
+        <div class="trusted-by">
+            <p>Confiado por líderes en la industria de ciberseguridad</p>
+            <img src="empresa1-logo.png" alt="Empresa 1">
+            <img src="empresa2-logo.png" alt="Empresa 2">
+            <img src="empresa3-logo.png" alt="Empresa 3">
+            <img src="empresa4-logo.png" alt="Empresa 4">
+        </div>
+
+        <div class="testimonial-section">
+            <h3>Testimonios</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <h4>Ana Sánchez</h4>
+                    <p>El equipo de ciberseguridad ha mejorado significativamente nuestras defensas.</p>
+                </div>
+                <div class="testimonial">
+                    <h4>Juan Pérez</h4>
+                    <p>El Red Team nos ayudó a identificar y corregir vulnerabilidades críticas.</p>
+                </div>
+                <div class="testimonial">
+                    <h4>Laura García</h4>
+                    <p>El Blue Team respondió rápidamente a un incidente y minimizó el impacto en nuestra empresa.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h4>Recursos</h4>
+            <a href="#">Guías</a>
+            <a href="#">Blog</a>
+            <a href="#">Historias de clientes</a>
+            <a href="#">Glosario</a>
+        </div>
+        <div>
+            <h4>Compañía</h4>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Carreras</a>
+            <a href="#">Socios</a>
+            <a href="#">Contáctanos</a>
+        </div>
+        <div>
+            <h4>Redes Sociales</h4>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
